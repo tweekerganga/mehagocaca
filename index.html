@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual</title>
+    <style>
+.hover-click {
+  position: relative;
+  display: inline-block;
+  font-family: sans-serif;
+}
+.hover-click input { display: none; }
+.trigger {
+  cursor: pointer;
+  color: #0056e4;
+  text-decoration: underline;
+}
+.box {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #333;
+  padding: 10px 14px;
+  margin-top: 4px;
+  z-index: 100;
+  max-width: 280px;
+  box-shadow: 2px 2px 0 #000;
+}
+.hover-click:hover .box { display: block; }
+.hover-click input:checked ~ .box { display: block; }
+</style>
+</head>
+<body>
+    
+<h2>TEXTO / VÍDEO / PRESENTACIÓN</h2>
+
+<ul>
+  <li>CONSUMISMO / BOICOT</li>
+  <li>PEQUEÑAS COSAS QUE HACEN MUCHO</li>
+  <li>CLARIDAD MENTAL</li>
+</ul>  
+
+<label class="hover-click">
+  <input type="checkbox">
+  <span class="trigger"><h3>PETICIÓN: DEPÓSITO PARA BOTELLAS PET</h3></span>
+  <span class="box">El sistema de depósito, devolución y retorno (SDDR) es un modelo que ya funciona en Eslovaquia, Alemania o Escandinavia. El cliente paga un pequeño extra —unos 15 céntimos— al comprar una bebida embotellada. Al devolver el envase vacío e intacto con el símbolo correspondiente en cualquier punto de recogida, recupera su dinero. Reduce la basura en las calles, fomenta el reciclaje real y desincentiva el uso del plástico de un solo uso.</span>
+</label>
+
+<h2>MENOS TURISTAS EN TENERIFE</h2>
+   <h3>¿Por qué?</h3>
+<ul>
+  <li>MENOS IMPORTACIÓN DE PRODUCTOS</li>
+  <li>MENOS GENTE DEPENDIENTE DEL TURISMO Y DE SUS FLUCTUACIONES. Muchos negocios viven solo del turismo y no del día a día del guanche ni del vecino de aquí. Eso genera una economía frágil, estacional y desequilibrada.</li>
+</ul> 
+
+<br>
+
+<label class="hover-click">
+  <input type="checkbox">
+  <span class="trigger">Pasa el ratón o haz clic</span>
+  <span class="box">Este cuadro se adapta automáticamente al texto que contenga, por largo que sea hostias!</span>
+</label>
+
+</body>
+</html>
