@@ -5,32 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual</title>
     <style>
+  
+* { box-sizing: border-box; }
+body { font-family: sans-serif; padding: 20px; background-color: #946a7f; }
 .hover-click {
   position: relative;
-  display: inline-block;
-  font-family: sans-serif;
+  display: inline;
+  cursor: pointer;
 }
 .hover-click input { display: none; }
 .trigger {
-  cursor: pointer;
-  color: #0056e4;
+  color: #1a3e48;
   text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
 }
 .box {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background: #fff;
+  background: #ffabab;
   border: 1px solid #333;
-  padding: 10px 14px;
-  margin-top: 4px;
+  padding: 12px 16px;
+  margin-top: 6px;
   z-index: 100;
-  max-width: 280px;
+  width: max-content;
+  max-width: min(90vw, 400px);
   box-shadow: 2px 2px 0 #000;
+  font-size: clamp(14px, 2.5vw, 16px);
+  line-height: 1.5;
 }
-.hover-click:hover .box { display: block; }
-.hover-click input:checked ~ .box { display: block; }
+.hover-click:hover > .box,
+.hover-click input:checked ~ .box { 
+  display: block; 
+}
+ul { line-height: 1.8; }
 </style>
 </head>
 <body>
@@ -38,31 +48,317 @@
 <h2>TEXTO / VÍDEO / PRESENTACIÓN</h2>
 
 <ul>
-  <li>CONSUMISMO / BOICOT</li>
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">CONSUMISMO / BOICOT</span>
+      <span class="box">
+        Los mayores contaminadores globales de plástico en 2023 son: <strong>The Coca-Cola Company</strong>, <strong>Nestlé</strong>, <strong>Unilever</strong>, <strong>PepsiCo</strong>, <strong>Mondelēz International</strong>, <strong>Mars, Inc.</strong>, <strong>Procter & Gamble</strong>, <strong>Danone</strong>, <strong>Altria</strong> y <strong>British American Tobacco</strong>.
+        <br><br>
+        Se definen como las empresas matrices cuyas marcas fueron encontradas contaminando la mayor cantidad de países con más residuos plásticos, según los datos de auditoría de marcas.
+      </span>
+    </label>
+  </li>
   <li>PEQUEÑAS COSAS QUE HACEN MUCHO</li>
   <li>CLARIDAD MENTAL</li>
 </ul>  
 
 <label class="hover-click">
   <input type="checkbox">
-  <span class="trigger"><h3>PETICIÓN: DEPÓSITO PARA BOTELLAS PET</h3></span>
-  <span class="box">El sistema de depósito, devolución y retorno (SDDR) es un modelo que ya funciona en Eslovaquia, Alemania o Escandinavia. El cliente paga un pequeño extra —unos 15 céntimos— al comprar una bebida embotellada. Al devolver el envase vacío e intacto con el símbolo correspondiente en cualquier punto de recogida, recupera su dinero. Reduce la basura en las calles, fomenta el reciclaje real y desincentiva el uso del plástico de un solo uso.</span>
+  <span class="trigger" style="font-size: 1.5em; font-weight: bold;">PETICIÓN: DEPÓSITO PARA BOTELLAS PET</span>
+  <span class="box">
+    El sistema de depósito, devolución y retorno (SDDR) es un modelo que ya funciona en Eslovaquia, Alemania o Escandinavia. El cliente paga un pequeño extra —unos 15 céntimos— al comprar una bebida embotellada. Al devolver el envase vacío e intacto con el símbolo correspondiente en cualquier punto de recogida, recupera su dinero. Reduce la basura en las calles, fomenta el reciclaje real y desincentiva el plástico de un solo uso.
+  </span>
 </label>
 
-<h2>MENOS TURISTAS EN TENERIFE</h2>
-   <h3>¿Por qué?</h3>
-<ul>
-  <li>MENOS IMPORTACIÓN DE PRODUCTOS</li>
-  <li>MENOS GENTE DEPENDIENTE DEL TURISMO Y DE SUS FLUCTUACIONES. Muchos negocios viven solo del turismo y no del día a día del guanche ni del vecino de aquí. Eso genera una economía frágil, estacional y desequilibrada.</li>
-</ul> 
+
+<br>
+<br>
+
+
+<label class="hover-click">
+  <input type="checkbox">
+  <span class="trigger">textosos</span>
+  <span class="box">Este cuadro se adapta automáticamente al texto que contenga, por largo que sea.</span>
+</label>
+
+<br>
 
 <br>
 
 <label class="hover-click">
   <input type="checkbox">
-  <span class="trigger">Pasa el ratón o haz clic</span>
-  <span class="box">Este cuadro se adapta automáticamente al texto que contenga, por largo que sea hostias!</span>
+  <span class="trigger">Lista de "Snacks" mas populares en Europa</span>
+  <span class="box"><h2>SNACKS & SWEETS</h2>
+<ul>
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">Milka Chocolate Bars (Alpine Milk)</span>
+      <span class="box">
+        <strong>100g =</strong> 534 kcal<br>
+        Grasa: 29g (saturadas ~18g)<br>
+        Azúcares: 56g<br>
+        Cacao: ~30%
+      </span>
+    </label>
+  </li>
+
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">Haribo Goldbears</span>
+      <span class="box">
+        <strong>100g =</strong> 343 kcal<br>
+        Grasa: 0.5g<br>
+        Azúcares: 47g<br>
+        Cacao: 0%
+      </span>
+    </label>
+  </li>
+
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">Lay's Classic Potato Chips</span>
+      <span class="box">
+        <strong>100g =</strong> 571 kcal<br>
+        Grasa: 35.7g (saturadas ~3.5g)<br>
+        Azúcares: ~1g<br>
+        Sal: 607mg
+      </span>
+    </label>
+  </li>
+
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">Kinder Bueno</span>
+      <span class="box">
+        <strong>100g =</strong> 572 kcal<br>
+        Grasa: 37g (saturadas 17g)<br>
+        Azúcares: 41g<br>
+        Cacao: ~7%
+      </span>
+    </label>
+  </li>
+
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">Nutella & Go!</span>
+      <span class="box">
+        <strong>100g =</strong> 519 kcal<br>
+        Grasa: 26.9g (saturadas ~5g)<br>
+        Azúcares: 44.2g<br>
+        Cacao: ~7.4%
+      </span>
+    </label>
+  </li>
+
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">Pringles Original</span>
+      <span class="box">
+        <strong>100g =</strong> 528 kcal<br>
+        Grasa: 31g (saturadas ~9g)<br>
+        Azúcares: 0.9g<br>
+        Sal: 1.0g
+      </span>
+    </label>
+  </li>
+
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">Oreo Cookies</span>
+      <span class="box">
+        <strong>100g =</strong> 471 kcal<br>
+        Grasa: 20.6g (saturadas ~10g)<br>
+        Azúcares: ~41g<br>
+        Cacao: ~5%
+      </span>
+    </label>
+  </li>
+
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">Knoppers (Milk-Hazelnut Wafer)</span>
+      <span class="box">
+        <strong>100g =</strong> 544–551 kcal<br>
+        Grasa: 33g (saturadas ~18g)<br>
+        Azúcares: 34–35g<br>
+        Cacao: ~3%
+      </span>
+    </label>
+  </li>
+
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">McVitie's Digestives (The Original)</span>
+      <span class="box">
+        <strong>100g =</strong> 483 kcal<br>
+        Grasa: 21.3g (saturadas 10.1g)<br>
+        Azúcares: 15.1g<br>
+        Fibra: 3.7g | Sal: 1.3g
+      </span>
+    </label>
+  </li>
+
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">Marabou Milk Chocolate</span>
+      <span class="box">
+        <strong>100g =</strong> 546 kcal<br>
+        Grasa: 32g (saturadas 19g)<br>
+        Azúcares: 58–59g<br>
+        Cacao: ~30%
+      </span>
+    </label>
+  </li>
+</ul>
+
+<h2>DRINKS</h2>
+<ul>
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">Coca-Cola Original</span>
+      <span class="box">
+        <strong>100ml =</strong> 42 kcal<br>
+        Grasa: 0g<br>
+        Azúcares: 10.6g<br>
+        Cafeína: ~10mg
+      </span>
+    </label>
+  </li>
+
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">Pepsi</span>
+      <span class="box">
+        <strong>100ml =</strong> 42–44 kcal<br>
+        Grasa: 0g<br>
+        Azúcares: 10.6–11.1g<br>
+        Cafeína: ~10mg
+      </span>
+    </label>
+  </li>
+
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">Nescafé Classic (prepared black)</span>
+      <span class="box">
+        <strong>100ml =</strong> ~2 kcal<br>
+        Grasa: 0g<br>
+        Azúcares: 0g<br>
+        Cafeína: ~60–80mg (por taza de 2g)
+      </span>
+    </label>
+  </li>
+
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">Fanta Orange</span>
+      <span class="box">
+        <strong>100ml =</strong> 52 kcal<br>
+        Grasa: 0g<br>
+        Azúcares: 13.0g<br>
+        Cafeína: 0mg
+      </span>
+    </label>
+  </li>
+
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">Heineken Lager (5% ABV)</span>
+      <span class="box">
+        <strong>100ml =</strong> 42 kcal<br>
+        Grasa: 0g<br>
+        Azúcares: 0g<br>
+        Carbohidratos: 3.2g<br>
+        Alcohol: 5% vol
+      </span>
+    </label>
+  </li>
+
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">Red Bull</span>
+      <span class="box">
+        <strong>100ml =</strong> 45 kcal<br>
+        Grasa: 0g<br>
+        Azúcares: 11g<br>
+        Cafeína: ~32mg
+      </span>
+    </label>
+  </li>
+
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">Lipton / Fuze Tea (sweetened)</span>
+      <span class="box">
+        <strong>100ml =</strong> 20–35 kcal<br>
+        Grasa: 0g<br>
+        Azúcares: ~4–8g<br>
+        Cafeína: ~10mg
+      </span>
+    </label>
+  </li>
+
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">Schweppes Tonic Water</span>
+      <span class="box">
+        <strong>100ml =</strong> 37–45 kcal<br>
+        Grasa: 0g<br>
+        Azúcares: 8.9–10.9g<br>
+        Cafeína: 0mg
+      </span>
+    </label>
+  </li>
+
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">Monster Energy (Original)</span>
+      <span class="box">
+        <strong>100ml =</strong> 45–48 kcal<br>
+        Grasa: 0g<br>
+        Azúcares: 11–13g<br>
+        Cafeína: ~34mg
+      </span>
+    </label>
+  </li>
+
+  <li>
+    <label class="hover-click">
+      <input type="checkbox">
+      <span class="trigger">San Pellegrino (sparkling mineral water)</span>
+      <span class="box">
+        <strong>100ml =</strong> 0 kcal<br>
+        Grasa: 0g<br>
+        Azúcares: 0g<br>
+        Minerales: Ca ~15mg, Mg ~4mg, Na ~3mg
+      </span>
+    </label>
+  </li>
+</ul></span>
 </label>
 
-</body>
-</html>
+<p>https://www.breakfreefromplastic.org/2024/02/07/bffp-movement-unveils-2023-global-brand-audit-results/</p>
+<p>https://talking-trash.com/case-study/pepsico/</p>
+<p>https://talking-trash.com/case-study/nestle/</p>
+<p>https://tracenable.com/company/nestle/waste-management</p>
+
